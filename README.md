@@ -59,3 +59,14 @@ Esta es la opción menos recomendada, aunque funciona:
 
     Greeting.defaultProps = { firstName: 'John', lastName: 'Smith' };
 ```
+
+## PropTypes
+
+Son una manera de validar las props recibidas en los componentes, es un enfoque similar a TypeScript.
+
+```
+Greeting.propTypes = {
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+};
+```

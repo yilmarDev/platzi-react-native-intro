@@ -12,8 +12,11 @@ export default function App() {
       <LoginForm />
 
       <Greeting />
-      <Greeting firstName="Daniel" lastName="Pulido" />
-      <Greeting firstName="Camilo" lastName="Londoño" />
+      {/* <Greeting lastName={} /> */}
+      <Greeting firstName="Maria fernanda" />
+      <Greeting firstName="Maria fernanda" lastName="Lopez" />
+      <Greeting firstName="Daniel" lastName="lopez" />
+      <Greeting firstName="Camilo" lastName="Londoño Arenas" />
 
       <StatusBar style="auto" />
     </View>
