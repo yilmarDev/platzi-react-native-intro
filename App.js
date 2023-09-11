@@ -1,26 +1,14 @@
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import NavigationStack from './src/navigation/NavigationStack';
 
-import { LoginForm } from './src/components/LoginForm';
-// import { Greeting } from './src/components/Greeting';
+import { StyleSheet } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* <Text>New text for Metro</Text> */}
-
-      <LoginForm />
-
-      {/* <Greeting /> */}
-      {/* <Greeting lastName={} /> */}
-      {/* <Greeting firstName="Maria fernanda" /> */}
-      {/* <Greeting firstName="Maria fernanda" lastName="Lopez" /> */}
-      {/* <Greeting firstName="Daniel" lastName="lopez" /> */}
-      {/* <Greeting firstName="Camilo" lastName="Londoño Arenas" /> */}
-
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <NavigationStack />
+    </NavigationContainer>
   );
 }
 
